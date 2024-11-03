@@ -1,0 +1,170 @@
+/* Estilo global para redefinir margens, paddings e utilizar a fonte Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(login.jpg) center/cover no-repeat;
+    flex-direction: column;
+}
+
+/* Estilo do contêiner principal */
+.wrapper {
+    width: 420px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Estilo do contêiner de entrada de dados */
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 45px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* Estilo do contêiner para lembrar e esquecer informações */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    width: 100%;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+    color: #fff;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do botão dentro do contêiner principal */
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    margin-top: 15px;
+}
+
+/* Estilo do link de redirecionamento dentro do contêiner principal */
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+    width: 100%;
+}
+
+.register-link p a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do modal de consentimento */
+#consentModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#consentModal h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#consentModal .consent-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#consentModal p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#consentModal p input {
+    margin-right: 10px;
+}
+
+#consentModal .btn {
+    width: 150px;
+    margin-top: 20px;
+    align-self: center;
+}
